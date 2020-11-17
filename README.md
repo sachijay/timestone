@@ -1,9 +1,7 @@
-# Package `timestone` for date and time manipulation
+# timestone
 
 <!-- badges: start -->
 <!-- badges: end -->
-
-## Overview
 
 This package contains an `R` package to manipulate dates and times.
 
