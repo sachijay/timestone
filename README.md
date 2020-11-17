@@ -13,8 +13,10 @@ The main function implemented in this package is
 You can install the released version of timestone from [GitHub](https://github.com/) with:
 
 ``` r
-...
+devtools::install_github("sachijay/timestone")
 ```
+
+`devtools` package should be already installed. If not use `install.packages("devtools")`.
 
 ## Example
 
