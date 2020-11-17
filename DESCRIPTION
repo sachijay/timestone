@@ -1,13 +1,13 @@
 Package: timestone
-Title: What the Package Does (One Line, Title Case)
+Title: Manipulate dates and times
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Pramoda",
+           family = "Jayasinghe",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           email = "pramoda.j@stat.ubc.ca",
+           comment = c(ORCID = "0000-0001-5398-163X"))
+Description: This package includes functions which are helpful when working with date and time values.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
