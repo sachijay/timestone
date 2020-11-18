@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 This repository contains an `R` package to manipulate dates and times.
 
 The main function implemented in this package is  
-  - `calculate_week()`
+  - `calculate_week()`: Calculate the number of weeks past a given date
   
 
 ## Installation
@@ -120,5 +120,8 @@ use_code_of_conduct()
 use_pkgdown()
 build_site()
 use_github_action("pkgdown")
+
+# Create a changelog
+use_news_md()
 ```
 
