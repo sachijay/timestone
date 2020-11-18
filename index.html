@@ -82,8 +82,10 @@
 <p>This repository contains an <code>R</code> package to manipulate dates and times.</p>
 <p>The main function implemented in this package is</p>
 <ul>
-<li><code><a href="reference/calculate_week.html">calculate_week()</a></code></li>
+<li>
+<code><a href="reference/calculate_week.html">calculate_week()</a></code>: Calculate the number of weeks past a given date</li>
 </ul>
+<p>Visit <a href="https://sachijay.github.io/timestone/" class="uri">https://sachijay.github.io/timestone/</a> to view package documentation.</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
@@ -188,7 +190,13 @@
 <span class="co"># install.packages("pkgdown")</span>
 <span class="fu">use_pkgdown</span><span class="op">(</span><span class="op">)</span>
 <span class="fu">build_site</span><span class="op">(</span><span class="op">)</span>
-<span class="fu">use_github_action</span><span class="op">(</span><span class="st">"pkgdown"</span><span class="op">)</span></code></pre></div>
+<span class="fu">use_github_action</span><span class="op">(</span><span class="st">"pkgdown"</span><span class="op">)</span>
+
+<span class="co"># Create a changelog</span>
+<span class="fu">use_news_md</span><span class="op">(</span><span class="op">)</span>
+
+<span class="co"># Add lifecycle badge</span>
+<span class="fu">use_lifecycle_badge</span><span class="op">(</span><span class="st">"Experimental"</span><span class="op">)</span></code></pre></div>
 </div>
 </div>
   </div>
@@ -218,6 +226,7 @@
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://github.com/sachijay/timestone/actions"><img src="https://github.com/sachijay/timestone/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
+<li><a href="https://www.tidyverse.org/lifecycle/#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
 </ul>
 </div>
 </div>
