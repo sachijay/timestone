@@ -1,5 +1,17 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
 # timestone
 
@@ -9,30 +21,26 @@
 This repository contains an `R` package to manipulate dates and times.
 
 The main function implemented in this package is  
-- `calculate_week()`
+  - `calculate_week()`
+  
 
 ## Installation
 
-You can install the development version from
-[GitHub](https://github.com/) with:
+You can install the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("sachijay/timestone")
 ```
 
+
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
 
-``` r
+```{r example}
 library(timestone)
 library(lubridate)
-#> 
-#> Attaching package: 'lubridate'
-#> The following objects are masked from 'package:base':
-#> 
-#>     date, intersect, setdiff, union
 
 date_seq <- seq.Date(ymd("2020-01-01"),
                      ymd("2020-02-01"),
@@ -40,16 +48,14 @@ date_seq <- seq.Date(ymd("2020-01-01"),
 
 calculate_week(date_seq, "2020-01-2",
                no_of_weeks = 2)
-#>  [1] -1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1
-#> [26]  1  1  1  1  2  2  2
 ```
+
 
 ## Building the package
 
-The following codes were used to build this package. *The prompts after
-each function (if shown) are handled as needed.*
+The following codes were used to build this package. *The prompts after each function (if shown) are handled as needed.*
 
-``` r
+```r
 # Loads usethis package
 library(devtools)
 
@@ -81,3 +87,4 @@ use_readme_rmd()
 use_package("lubridate")
 use_package("tibble")
 ```
+
