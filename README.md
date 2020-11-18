@@ -28,16 +28,14 @@ This is a basic example which shows you how to solve a common problem:
 ``` r
 library(timestone)
 library(lubridate)
-#> 
-#> Attaching package: 'lubridate'
-#> The following objects are masked from 'package:base':
-#> 
-#>     date, intersect, setdiff, union
 
+# Create a sequences of dates
 date_seq <- seq.Date(ymd("2020-01-01"),
                      ymd("2020-02-01"),
                      by = "day")
 
+# Calculate bi-weekly number of each of 
+# the dates in date_seq
 calculate_week(date_seq, "2020-01-2",
                no_of_weeks = 2, 
                as_integer = FALSE)
@@ -96,4 +94,9 @@ use_readme_rmd()
 
 # To build the readme file
 build_readme()
+
+# Initialize testing
+use_testthat()
+
+# Formal testing the calculate_week function
 ```
