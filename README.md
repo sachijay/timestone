@@ -4,6 +4,9 @@
 # timestone
 
 <!-- badges: start -->
+
+[![R build
+status](https://github.com/sachijay/timestone/workflows/R-CMD-check/badge.svg)](https://github.com/sachijay/timestone/actions)
 <!-- badges: end -->
 
 This repository contains an `R` package to manipulate dates and times.
@@ -55,6 +58,13 @@ calculate_week(date_seq, "2020-01-2",
 #> # ... with 22 more rows
 ```
 
+## Code of Conduct
+
+Please note that the timestone project is released with a [Contributor
+Code of
+Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.
+
 ## Building the package
 
 The following codes were used to build this package. *The prompts after
@@ -101,4 +111,18 @@ use_testthat()
 # Formal testing the calculate_week function
 use_test("calculate_week_test")
 
+# Create vignettes
+use_vignette(name = "summarise_daily_data", title = "Summarise Daily Data")
+
+# To build vignettes
+build_vignettes()
+
+# To add code of conduct
+use_code_of_conduct()
+
+# Make the package website
+# install.packages("pkgdown")
+use_pkgdown()
+build_site()
+use_github_action("pkgdown")
 ```
