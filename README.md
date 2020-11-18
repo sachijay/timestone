@@ -7,12 +7,17 @@
 
 [![R build
 status](https://github.com/sachijay/timestone/workflows/R-CMD-check/badge.svg)](https://github.com/sachijay/timestone/actions)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
 This repository contains an `R` package to manipulate dates and times.
 
 The main function implemented in this package is  
-- `calculate_week()`
+- `calculate_week()`: Calculate the number of weeks past a given date
+
+Visit <https://sachijay.github.io/timestone/> to view package
+documentation.
 
 ## Installation
 
@@ -125,4 +130,10 @@ use_code_of_conduct()
 use_pkgdown()
 build_site()
 use_github_action("pkgdown")
+
+# Create a changelog
+use_news_md()
+
+# Add lifecycle badge
+use_lifecycle_badge("Experimental")
 ```
