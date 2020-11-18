@@ -110,5 +110,16 @@ use_vignette(name = "summarise_daily_data", title = "Summarise Daily Data")
 
 # To build vignettes
 build_vignettes()
+
+# To add code of conduct
+use_code_of_conduct()
+
+# Make the package website
+# install.packages("pkgdown")
+use_pkgdown()
+build_site()
+
+# Setup GitHub actions for website
+use_github_action("pkgdown")
 ```
 
