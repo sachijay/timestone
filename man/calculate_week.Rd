@@ -8,7 +8,7 @@ calculate_week(
   x,
   start_date,
   no_of_weeks = 1,
-  date_parsing = ymd,
+  date_parsing = lubridate::ymd,
   as_integer = TRUE
 )
 }

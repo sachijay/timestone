@@ -17,7 +17,7 @@
 calculate_week <- function(x,
                            start_date,
                            no_of_weeks = 1,
-                           date_parsing = ymd,
+                           date_parsing = lubridate::ymd,
                            as_integer = TRUE){
 
   # Parse the characters containing dates into date object
@@ -38,17 +38,17 @@ calculate_week <- function(x,
   }
 
   # Calculate number of days between x and start_date
-  n_diff_days <- difftime(x_parse,
-                          start_date_parse,
-                          units = "days") %>%
-    as.integer()
+  n_diff_days <- as.integer(difftime(x_parse,
+                                     start_date_parse,
+                                     units = "days"))
+
 
   # Calculate week number
   out <- n_diff_days %/% (7 * no_of_weeks)
 
   # Convert the output into a tibble
   if(!as_integer){
-    out <- tibble(x_parse, week = out)
+    out <- tibble::tibble(x_parse, week = out)
   }
 
   # Return the output
