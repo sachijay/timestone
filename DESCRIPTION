@@ -17,4 +17,7 @@ Imports:
     lubridate,
     tibble
 Suggests: 
-    testthat
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
