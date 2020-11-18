@@ -90,5 +90,11 @@ use_readme_rmd()
 
 # To build the readme file
 build_readme()
+
+# Initialize testing
+use_testthat()
+
+# Formal testing the calculate_week function
+
 ```
 
