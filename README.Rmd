@@ -55,6 +55,11 @@ calculate_week(date_seq, "2020-01-2",
 ```
 
 
+## Code of Conduct
+
+Please note that the timestone project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+
+
 ## Building the package
 
 The following codes were used to build this package. *The prompts after each function (if shown) are handled as needed.*
