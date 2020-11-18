@@ -39,9 +39,22 @@ date_seq <- seq.Date(ymd("2020-01-01"),
                      by = "day")
 
 calculate_week(date_seq, "2020-01-2",
-               no_of_weeks = 2)
-#>  [1] -1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1
-#> [26]  1  1  1  1  2  2  2
+               no_of_weeks = 2, 
+               as_integer = FALSE)
+#> # A tibble: 32 x 2
+#>    x_parse     week
+#>    <date>     <dbl>
+#>  1 2020-01-01    -1
+#>  2 2020-01-02     0
+#>  3 2020-01-03     0
+#>  4 2020-01-04     0
+#>  5 2020-01-05     0
+#>  6 2020-01-06     0
+#>  7 2020-01-07     0
+#>  8 2020-01-08     0
+#>  9 2020-01-09     0
+#> 10 2020-01-10     0
+#> # ... with 22 more rows
 ```
 
 ## Building the package
@@ -71,13 +84,16 @@ check()
 # To add license to the package
 use_mit_license("Pramoda Jayasinghe")
 
+# Defined required packages
+use_package("lubridate")
+use_package("tibble")
+
 # Create the document
 document()
 
 # To create the package readme
 use_readme_rmd()
 
-# Defined used packages
-use_package("lubridate")
-use_package("tibble")
+# To build the readme file
+build_readme()
 ```

@@ -47,7 +47,8 @@ date_seq <- seq.Date(ymd("2020-01-01"),
                      by = "day")
 
 calculate_week(date_seq, "2020-01-2",
-               no_of_weeks = 2)
+               no_of_weeks = 2, 
+               as_integer = FALSE)
 ```
 
 
@@ -77,14 +78,17 @@ check()
 # To add license to the package
 use_mit_license("Pramoda Jayasinghe")
 
+# Defined required packages
+use_package("lubridate")
+use_package("tibble")
+
 # Create the document
 document()
 
 # To create the package readme
 use_readme_rmd()
 
-# Defined used packages
-use_package("lubridate")
-use_package("tibble")
+# To build the readme file
+build_readme()
 ```
 
