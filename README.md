@@ -99,4 +99,6 @@ build_readme()
 use_testthat()
 
 # Formal testing the calculate_week function
+use_test("calculate_week_test")
+
 ```
