@@ -1,4 +1,4 @@
-# timestone 0.0.0.9000
+# timestone 0.1.0
 
 The first version of `timestone`. There is only one function at the moment.
 
