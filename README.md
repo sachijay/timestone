@@ -131,6 +131,9 @@ use_pkgdown()
 build_site()
 use_github_action("pkgdown")
 
+# Increase minor release version
+use_version(which = "minor")
+
 # Create a changelog
 use_news_md()
 
